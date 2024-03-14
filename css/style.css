@@ -158,3 +158,63 @@ footer a:visited{
     text-decoration: line-through;
 
 }
+
+/* Newly added by SKK*/
+/* login */
+* {
+    box-sizing: border-box;
+  }
+  
+  input {
+    width:200px;
+    padding: 5px;
+    border: 5px solid navy;
+    border-radius: 10px;
+  }
+  
+  label {
+    padding: 5px 5px 5px 5px;
+    display: inline-block;
+  }
+    
+ 
+  .container {
+    border-radius: 5px;
+    background-color: lightblue;
+    padding: 20px;
+  }
+  
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns, this is an important piece!*/
+  .row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+a.login {
+    background-color: navy;
+    color: white;
+        padding: 10px 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+      }
+a:hover,a:active{
+    background-color: lightblue;
+    color: navy;
+}
+
+/* login stuff */
