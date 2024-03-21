@@ -18,7 +18,7 @@ footer{grid-area:footer;}
 body{
     margin: 0;
     padding: 0;
-    font-family: 'Cambria';
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin-left: 20px;
     margin-right: 20px;
     background-color:#FAD5B8;
@@ -26,7 +26,6 @@ body{
 
 button{
     cursor: pointer;
-    font-family: 'Cambria';
 }
 
 /* text edits */
@@ -94,11 +93,11 @@ nav a:hover {
 }
 
 /* Style the "active" element to highlight the current page */
-nav a:active {
+nav a.active {
     font-weight: italic;
     text-decoration: dotted;
+    color:green;
 }
-/*does not work*/
 
 /* Style the search box inside the navigation bar */
 nav input[type=text] {
@@ -123,11 +122,6 @@ article{
     margin-bottom: 25px;
 }
 
-/* img */
-img {width:400px; height: auto;}
-
-/* sidebar */
-/* søgbar */
 /* Add a black alpha color to the top navigation bar */
 footer {
     overflow: hidden;
@@ -156,5 +150,125 @@ footer a:hover {
 
 footer a:visited{
     text-decoration: line-through;
-
 }
+
+/* Newly added by SKK*/
+/* about start */
+ul.contri{
+    list-style-type:disc;
+    
+}
+li::marker{
+    color:orange;
+}
+
+table, th,td{
+    text-align: center;
+    border-collapse: collapse;
+}
+
+th{
+    border-bottom: orange 2px solid;
+    padding:5px;
+}
+
+td{
+    border-bottom:orange 1px solid;
+}
+
+.container2 {
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.685);
+    padding: 20px;
+  }
+
+/* about end */
+/* login */
+* {
+    box-sizing: border-box;
+  }
+  
+  input {
+    width:200px;
+    padding: 5px;
+    border: 5px solid navy;
+    border-radius: 10px;
+  }
+  
+  label {
+    padding: 5px 5px 5px 5px;
+    display: inline-block;
+  }
+    
+ 
+  .container {
+    border-radius: 5px;
+    background-color: lightblue;
+    padding: 20px;
+  }
+  
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns, this is an important piece!*/
+  .row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+a.login {
+    background-color: navy;
+    color: white;
+        padding: 10px 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+      }
+a:hover,a:active{
+    background-color: lightblue;
+    color: navy;
+}
+
+/* login stuff end*/
+
+/* create start */
+input[type=button]{
+    width: 100px;
+    padding: 10px 10px;
+    text-align:center;
+    color: white;
+    background-color: navy;
+    border-radius: 10px;
+}
+
+input[type=button]:hover{
+    background-color: orange;
+    color: navy;
+    border-radius:10px;
+    border:none;
+}
+
+.col-50L{
+    float: left;
+    width: 50%;
+    margin-top: 10px;
+}
+
+.col-50R{
+    float: right;
+    width: 50%;
+    margin-top: 10px;
+}
+
+/* create end */
