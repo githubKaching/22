@@ -12,6 +12,7 @@ Timeline:
 
 - meeting @morris miller library see messenger at 12:30
 - 21/3
+  - find possible solutions for archive and header
 - 4/4
 - 11/4
 - 18/4
@@ -25,30 +26,29 @@ Timeline:
   - [x] consistently across all pages
 
 - [Homepage](index.html)
-  - [ ] first page visitors see
-  - [ ] display four blogplosts  in reverse chronological order (i.e., the most recent post first).
+  - [X] display four blogplosts in reverse chronological order (i.e., the most recent post first).
     All posts include:
-    - [ ] post title
-    - [ ] post creation date with day, month, and year components
-    - [ ] post tags/keywords
-    - [ ] post content
-  - [ ] styled
+    - [X] post title
+    - [X] post creation date with day, month, and year components
+    - [X] post tags/keywords
+    - [X] post content
+  - [X] styled
   - [ ] at least 200 words per post, [no need to make sense](https://loremipsum.io)
 - [Archive page](archive.html)
-  - [ ] 5 archived posts different from the previous four
-  - [ ] Archived posts should also be listed in reverse chronological order
-    All archived posts should include (min 200 words):
-    - [ ] The content of each archived post should include at least the following:
-    - [ ] post title
-    - [ ] post creation date with day, month, and year components
-    - [ ] post tags/keywords
+  - [X] 5 archived posts
+  - [X] Archived posts should also be listed in reverse chronological order
+    All archived posts should include (min 200 words) include at least the following:
+    - [X] post title
+    - [X] post creation date with day, month, and year components
+    - [X] post tags/keywords
+    - [ ] different from the previous four
     - [ ] a link, button or similar control allowing the user to read the full post
-  - [ ] this button: Clicking this link/button should cause the post content to be displayed beneath, which you can achieve using CSS and JavaScript (and animation too if you choose). A link/button should also be provided to hide the content
+      - [ ] this button: Clicking this link/button should cause the post content to be displayed beneath, which you can achieve using CSS and JavaScript (and animation too if you choose). A link/button should also be provided to hide the content
  - [login page](login.html)
   - [X] ~~The page should include a form element with input fields and labels for a username, a password, and a login button~~
   - [ ] Include JavaScript field validation to prevent the form from being submitted if any of the fields are empty (see the common requirements for form handling above)
   - [ ] A register link/button should be included for those that are not current members (see next)
-  - [ ] Remember, submitting the form should take the user back to the homepage; implementing a functional login system will be part of Assignment 2
+  - [X] Remember, submitting the form should take the user back to the homepage; implementing a functional login system will be part of Assignment 2
 - **registration page**
   - [ ]  Decision point: Your group will need to decide between implementing user registration on the Login page by changing the displayed form (with JavaScript) or directing the user to a separate registration page (register.html)
 Whichever option you choose, the expected functionality of the registration form is as follows:
@@ -70,7 +70,7 @@ the title field exceeds 80 characters
   - [ ] As with the other forms, built-in HTML validation will need to be disabled Form validation (and behaviour upon successful validation/submission) should operate as specified for all forms
   - [ ] Clicking the reset button should clear all form field values
 - [About page](about.html)
-  - [ ] Include the names and student IDs of each group member
+  - [X] Include the names and student IDs of each group member
   - [ ] Include a reference list for all assets used that have not been created by your group (e.g., images, fonts, icons, etc.)
   - [ ] References to web resources should include the link to the specific page used and not just the top-level site
  
