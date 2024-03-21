@@ -3,22 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Harrison, Pooja & Sara - Group 3">
-    <title> SUB </title>
     <link rel="icon" href="img/penguin.png">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js"></script>
+    <title>SUB</title>
+
+    <style>
+        .textarea {
+            border: 1px solid #025E73; /* Default border color */
+        }
+
+        .textarea.error {
+            border-color: red; /* Border color when content is empty */
+        }
+
+        .textarea.filled {
+            border-color: #025E73; /* Border color when content is filled */
+        }
+    </style>
 </head>
 <body>
-    <h1> Add a new post - yay</h1>
-<nav>
-    <ul>
-        <a href="index.html">Home</a>
-        <a href="login.html">Login</a>
-        <a class="active" href="create.html">Post</a>
-        <a href="archive.html">Archive</a>
-        <a href="about.html">About Us</a>
-    </ul>
-</nav>
+    <div class="grid-container">
+
+<header>
+    <img id="logo" src="img/logo.png" alt="Logo">
+    <nav>
+        <ul>
+            <a href="index.html">Home</a>
+            <a href="login.html">Login</a>
+            <a class="active" href="create.html">Post</a>
+            <a href="archive.html">Archive</a>
+            <a href="about.html">About Us</a>
+        </ul>
+    </nav>
+</header>
+
+    <h2> Add a new post - yay</h2>
+
 
 <div class="container">
     <p> Build the post here:</p>
@@ -28,7 +49,7 @@
                 <label for="title">Title:</label>
             </div>
             <div class="col-75">
-                <input type="text" id="title" name="title"><br>        
+                <span class="textarea" role="textbox" contenteditable id="title" placeholder="The funniest thing happend"></span>        
             </div>
         </div>
         <div class="row">
@@ -36,7 +57,7 @@
                 <label for="tags">Tags:</label>
             </div>
             <div class="col-75">
-                <input type="text" id="tags">
+                <span class="textarea" role="textbox" contenteditable id="tags" placeholder="LOL, WOW"></span>
             </div>
         </div>
         <div class="row">
@@ -44,15 +65,15 @@
                 <label for="content">Breadtext:</label>
             </div>
             <div class="col-75">
-                <input type="text" id="content">
+                <span class="textarea" role="textbox" placeholder="Once upon a time..." contenteditable id="content"></span>
             </div>
         </div>
         <div class="row">
             <div class="col-50L">
-                <input type="button" id="reset" value="Reset">
+                <button id="create" onclick="reset()">Reset</button> i do not know why this is dual colored.
             </div>
             <div class="col-50R">
-                <input type="button" id="submit" value="Submit">
+                <button id="create" onclick="val()">Submit</button>
             </div>
         </div>
     </form>

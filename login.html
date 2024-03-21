@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title> SUB </title>
+    <title>SUB</title>
     <meta name="author" content="Harrison, Pooja & Sara - Group 3">
     <link rel="icon" href="img/penguin.png">
     <link rel="stylesheet" href="css/style.css">
@@ -13,7 +13,9 @@
     ask for password
 -->
 <body>
-<h1>Login</h1>
+    <div class="grid-container">
+
+<h2>Login</h2>
 <div class="container">
     <p> Please fill in your credentials:</p>
     <form id="login">
@@ -22,7 +24,7 @@
                 <label for="uname">User name:</label>
             </div>
             <div class="col-75">
-                <input type="text" id="uname" name="uname"><br>        
+                <input type="text" id="uname" name="uname" required><br>        
             </div>
         </div>
         <div class="row">
@@ -30,15 +32,25 @@
                 <label for="psw">Password:</label>
             </div>
             <div class="col-75">
-                <input type="password" id="psw">
+                <input type="password" id="psw" name="psw" pattern="(?=.*\w).{6,12}" required>
             </div>
         </div>
     </form>
+
+    <div class="container2">
+        <div class="col-50L">
+            <a href="index.html">
+                <input type="button" id="new" value="Register" >
+            </a>
+        </div>
+        <div class="col-50R">
+            <a href="index.html">
+                <input type="button" id="login" value="Login">
+            </a>
+         </div>
+    </div>
+    
 </div>
-
-<br>
-
-<a class="login" href="index.html">Login</a> <!--should probably be a input type button-->
 
 </body>
 
