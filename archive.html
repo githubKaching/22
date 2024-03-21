@@ -2,12 +2,47 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title> SUB </title>
-    <link rel="icon" href="img/penguin.png">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Archive Page</title>
+    <style>
+        .blog-post {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .post-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .post-date {
+            font-style: italic;
+            color: #666;
+            margin-bottom: 10px;
+        }
+        .post-tags {
+            margin-bottom: 10px;
+        }
+        .post-content {
+            display: none;
+            margin-top: 10px;
+        }
+        .show-content {
+            display: block;
+            margin-top: 10px;
+            color: blue;
+            cursor: pointer;
+        }
+        .hide-content {
+            display: none;
+            color: red;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
+
 <header>
     <a href="index.html">
         <img id="logo" src="img/logo.png" alt="Logo">
@@ -22,5 +57,86 @@
         </ul>
     </nav>
 </header>
+
+    <div class="blog-post">
+        <div class="post-title">Post Title 5</div>
+        <div class="post-date">March 1, 2024</div>
+        <div class="post-tags">Tags: Tag13, Tag14, Tag15</div>
+        <div class="post-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet consequat ipsum. Nullam vestibulum, quam et ultricies rutrum, libero odio ultricies justo, eu tristique nisi felis a lorem.</p>
+            <!-- More content here -->
+        </div>
+        <div class="show-content">Read more</div>
+        <div class="hide-content">Hide content</div>
+    </div>
+
+    <div class="blog-post">
+        <div class="post-title">Post Title 6</div>
+        <div class="post-date">February 25, 2024</div>
+        <div class="post-tags">Tags: Tag16, Tag17, Tag18</div>
+        <div class="post-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet consequat ipsum. Nullam vestibulum, quam et ultricies rutrum, libero odio ultricies justo, eu tristique nisi felis a lorem.</p>
+            <!-- More content here -->
+        </div>
+        <div class="show-content">Read more</div>
+        <div class="hide-content">Hide content</div>
+    </div>
+
+    <div class="blog-post">
+        <div class="post-title">Post Title 7</div>
+        <div class="post-date">February 20, 2024</div>
+        <div class="post-tags">Tags: Tag19, Tag20, Tag21</div>
+        <div class="post-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet consequat ipsum. Nullam vestibulum, quam et ultricies rutrum, libero odio ultricies justo, eu tristique nisi felis a lorem.</p>
+            <!-- More content here -->
+        </div>
+        <div class="show-content">Read more</div>
+        <div class="hide-content">Hide content</div>
+    </div>
+
+    <div class="blog-post">
+        <div class="post-title">Post Title 8</div>
+        <div class="post-date">February 15, 2024</div>
+        <div class="post-tags">Tags: Tag22, Tag23, Tag24</div>
+        <div class="post-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet consequat ipsum. Nullam vestibulum, quam et ultricies rutrum, libero odio ultricies justo, eu tristique nisi felis a lorem.</p>
+            <!-- More content here -->
+        </div>
+        <div class="show-content">Read more</div>
+        <div class="hide-content">Hide content</div>
+    </div>
+
+    <div class="blog-post">
+        <div class="post-title">Post Title 9</div>
+        <div class="post-date">February 10, 2024</div>
+        <div class="post-tags">Tags: Tag25, Tag26, Tag27</div>
+        <div class="post-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet consequat ipsum. Nullam vestibulum, quam et ultricies rutrum, libero odio ultricies justo, eu tristique nisi felis a lorem.</p>
+            <!-- More content here -->
+        </div>
+        <div class="show-content">Read more</div>
+        <div class="hide-content">Hide content</div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.show-content').forEach(item => {
+            item.addEventListener('click', event => {
+                const postContent = event.target.parentNode.querySelector('.post-content');
+                postContent.style.display = 'block';
+                event.target.style.display = 'none';
+                event.target.parentNode.querySelector('.hide-content').style.display = 'block';
+            });
+        });
+
+        document.querySelectorAll('.hide-content').forEach(item => {
+            item.addEventListener('click', event => {
+                const postContent = event.target.parentNode.querySelector('.post-content');
+                postContent.style.display = 'none';
+                event.target.style.display = 'none';
+                event.target.parentNode.querySelector('.show-content').style.display = 'block';
+            });
+        });
+    </script>
+
 </body>
 </html>
