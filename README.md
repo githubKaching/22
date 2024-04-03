@@ -52,16 +52,16 @@ Timeline:
 - **registration page**
   - [ ]  Decision point: Your group will need to decide between implementing user registration on the Login page by changing the displayed form (with JavaScript) or directing the user to a separate registration page (register.html)
 Whichever option you choose, the expected functionality of the registration form is as follows:
-The form should include input fields and associated labels for username, email address, password, and confirm password, together with a button to register, and a button to reset (clear) the form fields values
-Within your group, decide on a password policy (a set of rules governing password requirements)
+- [X]The form should include input fields and associated labels for username, email address, password, and confirm password, together with a button to register, and a button to reset (clear) the form fields values
+- [ ]Within your group, decide on a password policy (a set of rules governing password requirements)
 Your policy should incorporate a minimum length and a required combination of letters (uppercase and lowercase), digits (0–9), or symbols/special characters
 Include JavaScript field validation to prevent the registration form from being submitted if:
-any of the fields are empty
-the email address field does not contain a valid email address (i.e., is not well-formed; you do not need to check if exists)
-the password and confirm password fields do not match (i.e., do not contain the same value)
-the password does not conform to your password policy
-Form validation (and behaviour upon successful validation/submission) should operate as specified for all forms
-Clicking the reset button should clear all form field values
+- [ ]any of the fields are empty
+- [ ]the email address field does not contain a valid email address (i.e., is not well-formed; you do not need to check if exists)
+- [ ]the password and confirm password fields do not match (i.e., do not contain the same value)
+- [ ]the password does not conform to your password policy
+- [ ]Form validation (and behaviour upon successful validation/submission) should operate as specified for all forms
+- [ ]Clicking the reset button should clear all form field values
 - [create post](create.html)
   - [X]  ~~The page should include a form element with input fields and labels for the post’s title, tags/keywords, and content with a button to create the post and a button to reset (clear) the form~~
   - [ ]  Include JavaScript field validation to prevent the form from being submitted if:
