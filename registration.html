@@ -25,19 +25,23 @@
         </nav>
     </header>
     <main>
-        <form id="registration-form" action="" novalidate>
-            <label for="username">Username:</label>
-            <input class="form-control" type="text" id="username" name="username" required>
-            <label for="email">Email address:</label>
-            <input class="form-control" type="email" id="email" name="email" required>
-            <label for="password">Password:</label>
-            
-            //need to decide on rules for the password, e.g. min length, required character etc
-            <input class="form-control" type="password" id="password" name="password" required minlength="6" maxlength="12">
-            <label for="cpassword">Confirm password:</label>
-            <input class="form-control" type="password" id="cpassword" name="cpassword" required minlength="6" maxlength="12">
-            <div id="form-actions"><p><button type="button" class="btn" id="register">Register</button> <button type="button" class="btn" id="clear"><a href=index.html>Cancel</a></button></p></div>
-        </form>
+        <div class="registration-section">
+            <h2>Registration</h2>
+       
+            <form id="registration-form" action="" novalidate>
+                <label for="username">Username:</label>
+                <input class="form-control" type="text" id="username" name="username" required>
+                <label for="email">Email address:</label>
+                <input class="form-control" type="email" id="email" name="email" required>
+                <label for="password">Password:</label>
+                
+                //need to decide on rules for the password, e.g. min length, required character etc
+                <input class="form-control" type="password" id="password" name="password" required minlength="6" maxlength="12">
+                <label for="cpassword">Confirm password:</label>
+                <input class="form-control" type="password" id="cpassword" name="cpassword" required minlength="6" maxlength="12">
+                <div id="form-actions"><p><button type="button" class="btn" id="register">Register</button> <button type="button" class="btn" id="clear"><a href=index.html>Cancel</a></button></p></div>
+            </form>
+        </div>
     </main>
 </body>
 </html>
